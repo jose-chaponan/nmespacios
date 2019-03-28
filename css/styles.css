@@ -1,0 +1,69 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media all and (min-width: 1px) {
+  .logo {
+    min-width: 120px;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    padding: 5px 15px;
+    border-right: 1px solid #333B41;
+    font-size: 1.5rem;
+  }
+  nav ul li:last-child a {
+    border-right: 0;
+    padding-right: 0;
+  }
+  header {
+    position: relative;
+    z-index: 2;
+  }
+  .encabezado {
+    background: url("../images/bg-encabezado.jpg") center;
+    padding: 25px 0;
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  .encabezado h1 {
+    text-align: center;
+    background-color: rgba(51, 59, 65, 0.95);
+    padding: 30px 10px;
+    margin: 0;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    font-family: "Akrobat-ExtraBold";
+  }
+  .encabezado h1 span {
+    color: #00AACC;
+  }
+  .caracteristicas {
+    font-family: "Akrobat-ExtraBold";
+    margin: 20px 0;
+  }
+  .caracteristicas li {
+    margin: 5px 0;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .encabezado {
+    text-align: left;
+  }
+  .encabezado h1 {
+    padding: 30px 0px 30px 40px;
+    text-align: left;
+    font-size: 3.2rem;
+  }
+}

@@ -1,0 +1,59 @@
+@import _variables
+
+body
+  font-family: $bodyFont
+  font-size: 1.5rem
+
+@media all and (min-width: 1px)
+  .logo
+    min-width: 120px
+
+  nav
+    ul
+      li
+        position: relative
+        a
+          padding: 5px 15px
+          border-right: 1px solid $grayColor
+          font-size: 1.5rem
+        &:last-child
+          a
+            border-right: 0
+            padding-right: 0
+  header
+    position: relative
+    z-index: 2
+    
+  .encabezado
+    background: url('../images/bg-encabezado.jpg') center
+    padding: 25px 0
+    position: relative
+    margin-top: -20px
+    margin-bottom: 20px
+    z-index: 1
+    h1
+      text-align: center
+      background-color: rgba($grayColor, .95)
+      padding: 30px 10px
+      margin: 0
+      font-size: 2.2rem
+      color: $whiteColor
+      font-family: $primaryFont
+      span
+        color: $jadeColor
+  
+  .caracteristicas
+    font-family: $primaryFont
+    margin: 20px 0
+    li
+      margin: 5px 0
+
+@media all and (min-width: 1025px)
+  header
+    display: flex
+  .encabezado
+    text-align: left
+    h1
+      padding: 30px 0px 30px 40px
+      text-align: left
+      font-size: 3.2rem
