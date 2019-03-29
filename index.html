@@ -23,9 +23,9 @@
       <a href="" class="logo"> <img src="images/logo.svg" alt="NM espacios" /> </a>
       <nav>
         <ul class="section_middle_right">
-          <li><a href="">NOSOTROS</a></li>
-          <li><a href="">CONTACTO</a></li>
-          <li><a href="">PROYECTOS ASOCIADOS</a></li>
+          <li><a href="#nosotros" class="scrollLink">NOSOTROS</a></li>
+          <li><a href="#contacto" class="scrollLink">CONTACTO</a></li>
+          <li><a href="#proyectos" class="scrollLink">PROYECTOS ASOCIADOS</a></li>
         </ul>
       </nav>
     </div>
@@ -33,7 +33,7 @@
   <div class="w_100 encabezado section_middle_right parallax-window" data-parallax="scroll" data-image-src="images/bg-encabezado.jpg">
     <h1 class="w_100 w_40_desktop">MAGDALENA RUTTE <span>1</span></h1>
   </div>
-  <section class="w_100 section_middle_center">
+  <section id="nosotros" class="w_100 section_middle_center">
     <div class="w_85 w_60_desktop section_middle_justify">
       <div class="w_100 w_40_desktop section_middle_center">
         <p><strong>Bienvenidos a Rutte1</strong>. La configuración de la edificación permite aprovechar de manera óptima la iluminación y ventilación natural, así mismo procura espacios amplios en sus ambientes brindando confort y funcionalidad. Este proyecto contará con dos ascensores, con estacionamientos individuales y una sala común en la azotea para propietarios y visitas disfruten un buen momento.</p>
@@ -96,7 +96,7 @@
       </div>
     </div>
     <div class="section_middle_center w_100">
-      <div class="w_85 w_60_desktop section_top_justify">
+      <div class="w_85 w_60_desktop section_top_justify dormitorios">
         <div class="w_100 w_31_desktop">
           <div class="titlePlano">1 DORM</div>
           <img src="images/plano.jpg" alt="plano" class="w_100" />
@@ -125,9 +125,9 @@
         <iframe class="mapaGoogle w_100 w_55_desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.30438944382!2d-77.062392228287!3d-12.091302045529366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a94286d6b1%3A0x3de1973a14debc82!2sRodolfo+Rutte+642%2C+Lima+15076!5e0!3m2!1ses-419!2spe!4v1553845830198!5m2!1ses-419!2spe" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="wrappContacto section_middle_center">
+    <div class="wrappContacto section_middle_center" id="contacto">
       <div class="w_85 w_60_desktop section_middle_justify">
-        <form action="" class="contacto section_middle_justify w_100 w_45_desktop">
+        <form action="" class="contacto section_middle_justify w_100 w_47_desktop">
           <label for="fullname" class="w_100">Nombre completo
             <input type="text" id="fullname" />
           </label>
@@ -138,13 +138,26 @@
             <input type="tel" id="phone" />
           </label>
           <label for="comments" class="w_100">Comentarios
-            <textarea name="comments" id="comments"></textarea>
+            <textarea name="comments" id="comments" rows="7"></textarea>
           </label>
         </form>
         <div>
           <h2 class="tituloContacto">COMUNÍCATE CON NOSOTROS</h2>
           <a href="mailto:informes@nmespacios.com.pe" class="correo">informes@nmespacios.com.pe</a>
           <p>(01) 711 9250</p>
+        </div>
+      </div>
+    </div>
+    <div class="section_middle_center" id="proyectos">
+      <div class="w_85 w_60_desktop section_bottom_justify proyectos">
+        <div class="itemProyect"> <img src="images/proyectos/proyectos1.jpg" class="w_100" alt="proyecto 1"> </div>
+        <div class="itemProyect"> <img src="images/proyectos/proyectos2.jpg" class="w_100" alt="proyecto 2"> </div>
+        <div class="itemProyect"> <img src="images/proyectos/proyectos3.jpg" class="w_100" alt="proyecto 3"> </div>
+        <div class="itemProyect"> <img src="images/proyectos/proyectos4.jpg" class="w_100" alt="proyecto 4"> </div>
+        <div class="itemProyect"> <img src="images/proyectos/proyectos5.jpg" class="w_100" alt="proyecto 5"> </div>
+        <div class="itemProyect section_bottom_right">
+          <h2 class="w_100 w_85_desktop">PROYECTOS ASOCIADOS</h2>
+          <p class="w_100 w_85_desktop">Parte de nuestra esxperiencia se basa en la construcción de centros empresariales ubicados en zonas estratégicas de Lima, como Miraflores y San Isidro.</p>
         </div>
       </div>
     </div>

@@ -7,13 +7,19 @@ body {
   .logo {
     min-width: 120px;
   }
+  nav {
+    width: 50%;
+  }
   nav ul li {
     position: relative;
+    text-align: right;
   }
   nav ul li a {
-    padding: 5px 15px;
-    border-right: 1px solid #333B41;
     font-size: 1.5rem;
+    color: #333B41;
+    width: 100%;
+    display: block;
+    margin: 0;
   }
   nav ul li:last-child a {
     border-right: 0;
@@ -118,6 +124,7 @@ body {
     position: relative;
     border: 1px solid #FFFFFF;
     padding: 20px 30px;
+    margin: 20px 0;
   }
   .contacto label {
     color: #FFFFFF;
@@ -159,6 +166,20 @@ body {
     color: #FFFFFF;
     font-size: 1.6rem;
   }
+  .proyectos {
+    margin: 20px 0;
+  }
+  .proyectos .itemProyect {
+    width: 49%;
+  }
+  .proyectos .itemProyect:last-child {
+    width: 100%;
+  }
+  .proyectos h2 {
+    font-family: "Akrobat-ExtraBold";
+    color: #24303B;
+    font-size: 2.1rem;
+  }
 }
 
 @media all and (min-width: 376px) {
@@ -179,6 +200,26 @@ body {
   .espacios img {
     width: 25%;
   }
+  .linkFilter {
+    width: 21%;
+    margin: 20px 0;
+  }
+  .linkFilter:nth-child(2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .proyectos .itemProyect {
+    width: 32.3%;
+  }
+  .proyectos .itemProyect:last-child {
+    width: 32.3%;
+  }
+  .manPhone {
+    height: 60vh;
+  }
+  .dormitorios > div {
+    width: 50%;
+  }
 }
 
 @media all and (min-width: 1025px) {
@@ -186,6 +227,19 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  nav {
+    width: 80%;
+  }
+  nav ul li {
+    position: relative;
+    text-align: inherit;
+  }
+  nav ul li a {
+    padding: 3px 15px;
+    border-right: 2px solid rgba(51, 59, 65, 0.5);
+    text-align: center;
+    display: inline;
   }
   .encabezado {
     text-align: left;
@@ -210,5 +264,26 @@ body {
   }
   .titleUbicacion {
     font-size: 2.8rem;
+  }
+  .proyectos {
+    margin: 20px 0;
+  }
+  .proyectos .itemProyect {
+    width: 33%;
+  }
+  .proyectos .itemProyect:last-child {
+    width: 33%;
+  }
+  .proyectos h2 {
+    font-size: 2.8rem;
+  }
+  .proyectos p {
+    font-size: 1.5rem;
+  }
+  .manPhone {
+    height: 95vh;
+  }
+  .dormitorios > div {
+    width: 33%;
   }
 }
