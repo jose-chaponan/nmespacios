@@ -25,7 +25,7 @@ body
     z-index: 2
     
   .encabezado
-    background: url('../images/bg-encabezado.jpg') center
+    // background: url('../images/bg-encabezado.jpg') center
     padding: 25px 0
     position: relative
     margin-top: -20px
@@ -47,13 +47,148 @@ body
     margin: 20px 0
     li
       margin: 5px 0
+      width: 100%
+      span
+        width: 85%
+
+  .linkFilter
+    border: 2px solid $jadeColor
+    padding: 10px 25px
+    margin: 10px 0
+    color: $grayColor
+    font-weight: 700
+    letter-spacing: 1px
+    &:hover
+      content: ''
+      color: $whiteColor
+      background-color: $jadeColor
+  
+  .manPhone
+    position: relative
+    height: 90vh
+    width: 100%
+    margin: 40px 0
+  
+  .espacios
+    background-color: $darkBlueColor
+    color: $whiteColor
+    padding: 25px 0
+    margin-bottom: 20px
+    font-weight: 700
+    font-size: 1.9rem
+    img
+      width: 40%
+      margin: 10px 0
+    
+  .titlePlano
+    text-align: center
+    display: block
+    margin: 20px auto 20px
+    width: 60%
+    text-align: center
+    border: 2px solid $jadeColor
+    color: $jadeColor
+    padding: 10px 0
+    font-weight: 700
+  
+  .titleUbicacion
+    font-family: $primaryFont
+    font-size: 2.8rem
+  .ubicacion
+    p
+      margin-bottom: 15px
+  
+  .mapaGoogle
+    height: 60vh
+    margin: 20px 0
+  
+  .wrappContacto
+    background-color: $darkBlueColor
+    color: $whiteColor
+    position: relative
+    padding: 25px 0
+    width: 100%
+    margin: 15px 0
+  
+  .contacto
+    position: relative
+    border: 1px solid $whiteColor
+    padding: 20px 30px
+    label
+      color: $whiteColor
+      font-size: 1.3rem
+      letter-spacing: 1px
+      margin-bottom: 10px
+      input,
+      textarea
+        padding: 7px
+        width: 100%
+        margin-top: 5px
+    &::before
+      content: ''
+      background-color: $darkBlueColor
+      position: absolute
+      top: -2px
+      right: 10%
+      width: 100px
+      height: 4px
+    &::after
+      content: ''
+      background-color: $darkBlueColor
+      position: absolute
+      bottom: -2px
+      right: 10%
+      width: 100px
+      height: 4px
+  
+  .tituloContacto
+    margin: 0 
+    font-family: $primaryFont
+    font-weight: 100
+    font-size: 2.8rem
+  .correo
+    color: $whiteColor
+    font-size: 1.6rem
+    
+
+@media all and (min-width: 376px)
+  .caracteristicas
+    li
+      width: 48%
+      span
+        width: 75%
+
+@media all and (min-width: 768px)
+  .espacios
+    font-size: 2.1rem
+    border-top: 30px solid $whiteColor
+    border-bottom: 30px solid $whiteColor
+    img
+      width: 25%
 
 @media all and (min-width: 1025px)
   header
     display: flex
+
   .encabezado
     text-align: left
     h1
       padding: 30px 0px 30px 40px
       text-align: left
       font-size: 3.2rem
+  
+  .caracteristicas
+    li
+      width: 50%
+      span
+        width: 80%
+  
+  .linkFilter
+    margin: 20px 15px
+
+  .espacios
+    border-top: 40px solid $whiteColor
+    border-bottom: 40px solid $whiteColor
+  
+  .titleUbicacion
+    font-size: 2.8rem
