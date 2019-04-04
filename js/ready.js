@@ -4,6 +4,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    dots: false,
     responsive: [{
       breakpoint: 768,
       settings: {
@@ -11,6 +12,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        dots: true
       }
     }]
   });
@@ -18,4 +20,5 @@ $(document).ready(function () {
     event.preventDefault();
     $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
   });
+  AOS.init();
 });

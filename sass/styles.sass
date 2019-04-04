@@ -167,6 +167,15 @@ body
       color: $darkBlueColor
       font-size: 2.1rem
 
+  footer
+    background-color: $darkBlueColor
+    padding: 15px 0
+    color: $whiteColor
+    p
+      text-align: center
+      width: 100%
+      margin: 10px 0
+
 @media all and (min-width: 376px)
   .caracteristicas
     li
@@ -213,6 +222,7 @@ body
           border-right: 2px solid rgba($grayColor, .5)
           text-align: center
           display: inline
+          width: 100%
 
   .encabezado
     text-align: left
@@ -254,3 +264,11 @@ body
   .dormitorios
     > div
       width: 33%
+  
+  footer
+    p
+      width: 50%
+      &:first-child
+        text-align: left
+      &:last-child
+        text-align: right
