@@ -129,6 +129,9 @@ body {
     margin: 15px 0;
     overflow: hidden;
   }
+  .wrappContacto a {
+    color: #FFFFFF;
+  }
   .contacto {
     position: relative;
     border: 1px solid #FFFFFF;
