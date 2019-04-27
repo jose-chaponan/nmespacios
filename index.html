@@ -22,7 +22,7 @@
   <script src="js/aos.js"></script>
   <script src="js/ready.js"></script>
 </head>
-<body>
+<body class="section_middle_center">
   <header class="w_100 section_middle_center">
     <div class="wrappHeader w_85 w_60_desktop section_middle_justify">
       <a href="" class="logo"> <img src="images/logo.svg" alt="NM espacios" /> </a>
@@ -30,7 +30,7 @@
         <ul class="section_middle_right">
           <li><a href="#nosotros" class="scrollLink">NOSOTROS</a></li>
           <li><a href="#contacto" class="scrollLink">CONTACTO</a></li>
-          <li><a href="#proyectos" class="scrollLink">PROYECTOS ASOCIADOS</a></li>
+          <li><a href="#proyectos" class="scrollLink">PROYECTOS DESTACADOS</a></li>
         </ul>
       </nav>
     </div>
@@ -41,28 +41,27 @@
   <section id="nosotros" class="w_100 section_middle_center">
     <div class="w_85 w_60_desktop section_middle_justify">
       <div class="w_100 w_40_desktop section_middle_center" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-        <p><strong>Bienvenidos a Rutte1</strong>. La configuración de la edificación permite aprovechar de manera óptima la iluminación y ventilación natural, así mismo procura espacios amplios en sus ambientes brindando confort y funcionalidad. Este proyecto contará con dos ascensores, con estacionamientos individuales y una sala común en la azotea para propietarios y visitas disfruten un buen momento.</p>
+        <p><strong>Te damos el espacio que necesitas</strong> en departamentos espaciosos, funcionales y perfectamente distribuidos que se adaptan a tu estilo de vida.</p>
+        <ul class="lista">
+          <li>Iluminación y ventilación natural.</li>
+          <li>Área común con terraza.</li>
+          <li>Ubicación privilegiada y cerca al parque Gonzales Prada.</li>
+        </ul>
         <ul class="w_100 section_top_justify caracteristicas">
-          <li class="section_middle_justify w_50_desktop">
-            <img src="images/cocina-integrada.svg" alt="Cocina integrada" width="30" /> <span>Cocina integrada e independiente</span>
+          <li class="section_top_justify">
+            <img src="images/relacion.svg" alt="relacion" /> <span>Excelente relación producto > calidad > precio</span>
           </li>
           <li class="section_middle_justify w_42_desktop">
-            <img src="images/depositos.svg" alt="Cocina integrada" width="30" /> <span>36 depósitos</span>
+            <img src="images/inclusivo.svg" alt="Cocina integrada" /> <span>Proyecto inclusivo</span>
           </li>
-          <li class="section_middle_justify w_50_desktop">
-            <img src="images/ambientes-amplios.svg" alt="Cocina integrada" width="30" /> <span>Ambientes amplios</span>
-          </li>
-          <li class="section_middle_justify w_42_desktop">
-            <img src="images/inclusivo.svg" alt="Cocina integrada" width="30" /> <span>Proyecto inclusivo</span>
-          </li>
-          <li class="section_middle_justify w_50_desktop">
-            <img src="images/acabados-de-calidad.svg" alt="Cocina integrada" width="30" /> <span>Acabados de calidad</span>
+          <li class="section_middle_justify">
+            <img src="images/cocina-integrada.svg" alt="Cocina integrada" /> <span>Cocina integrada e independiente</span>
           </li>
           <li class="section_middle_justify w_42_desktop">
-            <img src="images/ascensores.svg" alt="Cocina integrada" width="30" /> <span>02 Ascensores</span>
+            <img src="images/seguridad.svg" alt="seguridad" /> <span>Seguridad integral</span>
           </li>
-          <li class="section_middle_justify w_50_desktop">
-            <img src="images/estacionamientos.svg" alt="Cocina integrada" width="30" /> <span>38 estacionamientos +01&nbsp;de&nbsp;visita</span>
+          <li class="section_top_justify">
+            <img src="images/estacionamientos.svg" alt="Cocina integrada" /> <span>Estacionamientos y depósitos</span>
           </li>
         </ul>
       </div>
@@ -77,14 +76,26 @@
     </div>
     <div class="w_85 w_60_desktop section_middle_center" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
       <div class="slider w_100">
-        <div class="w_100 w_33_desktop spaceInAll_tiny">
-          <img src="images/gallery/rutte1-cocina.jpg" alt="cocina" class="w_100" />
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/loby.jpg" alt="loby" class="w_100" data-caption="Loby" />
         </div>
-        <div class="w_100 w_33_desktop spaceInAll_tiny">
-          <img src="images/gallery/rutte1-dormitorio.jpg" alt="dormitorio" class="w_100" />
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/area-comun.jpg" alt="area comun" class="w_100" data-caption="Área común con terraza" />
         </div>
-        <div class="w_100 w_33_desktop spaceInAll_tiny">
-            <img src="images/gallery/rutte1-sala.jpg" alt="sala" class="w_100" />
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/cocina.jpg" alt="cocina" class="w_100" data-caption="Cocina: granito en encimeras de cocina, muebles de MDF, pisos de porcelanato." />
+        </div>
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/dormitorio.jpg" alt="dormitorio" class="w_100" data-caption="Dormitorio principal con walk in closet y baño integrado." />
+        </div>
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/sala.jpg" alt="sala" class="w_100" data-caption="Sala" />
+        </div>
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/bano-principal.jpg" alt="baño principal" class="w_100" data-caption="Baño principal. Acabados de calidad."  />
+        </div>
+        <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
+          <img src="images/gallery/dormitorio-secundario.jpg" alt="dormitorio secundario" class="w_100" data-caption="Dormitorio secundario." />
         </div>
       </div>
     </div>
@@ -93,9 +104,7 @@
         <div class="section_middle_center w_85 w_60_desktop">
           <div class="w_100 w_50_desktop">TE DAMOS EL ESPACIO QUE NECESITAS</div>
           <div class="w_100 w_50_desktop section_middle_justify">
-            <img src="images/espacios/1.svg" alt="tipo-1-dormitorio" class="espaciosItem" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="600" />
-            <img src="images/espacios/2.svg" alt="tipo-2-dormitorio" class="espaciosItem" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="600" />
-            <img src="images/espacios/3.svg" alt="tipo-3-dormitorio" class="espaciosItem" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="600" />
+            <img src="images/espacios/desde-hasta.svg" alt="desde hasta" class="espaciosItem" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="600" />
           </div>
         </div>
       </div>
@@ -114,20 +123,46 @@
           <div class="titlePlano">3 DORM</div>
           <img src="images/plano.jpg" alt="plano" class="w_100" />
         </div>
+        <p class="w_100 align_center marginVertical_big">
+          Las imágenes, planos y características mostradas en este catálogo son referenciales y podrían mostrar modificaciones en el transcurso del proyecto sin previo aviso, por razones municipales, técnicas o por falta de disponibilidad de materiales en el mercado.
+        </p>
       </div>
       <div class="w_85 w_60_desktop section_middle_justify">
         <div class="w_100 w_37_desktop ubicacion" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600">
           <h2 class="titleUbicacion w_20_desktop">UBICACIÓN INMEJORABLE</h2>
           <p>
-            Rutte1 cuenta con una ubicación privilegiada y estratégica, muy cerca de tres avenidas
-            principales como son Javier Pardo Oeste,
-            Av.&nbsp;Brasil y Av. Pershing.</p>
+            <strong>Rutte1</strong> cuenta con una ubicación privilegiada y estratégica, muy cerca de avenidas principales como son Javier Pardo Oeste, Av. Brasil y Av. Pershing.</p>
           <p>
-            Además de estar muy cerca de todo lo que necesitas para vivir en armonía, como centros comerciales,
-            restaurantes, universidades, bancos y más.
+            A 10 minutos de la Costa Verde y del Centro comercial Real Plaza. Y a pocos minutos de restaurantes, supermercados, parques, centros de entretenimiento, centros educativos, bancos y más. ¡Vive cerca de todo lo que te gusta!
           </p>
         </div>
         <iframe class="mapaGoogle w_100 w_55_desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.30438944382!2d-77.062392228287!3d-12.091302045529366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a94286d6b1%3A0x3de1973a14debc82!2sRodolfo+Rutte+642%2C+Lima+15076!5e0!3m2!1ses-419!2spe!4v1553845830198!5m2!1ses-419!2spe" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="w_100 section_middle_justify marginVertical_big">
+          <div class="section_middle_justify itemDepa">
+            <img src="images/restaurantes.svg" alt="restaurantes" />
+            <p>Restaurantes</p>
+          </div>
+          <div class="section_middle_justify itemDepa">
+            <img src="images/bancos.svg" alt="bancos" />
+            <p>Bancos</p>
+          </div>
+          <div class="section_middle_justify itemDepa">
+            <img src="images/tiendas.svg" alt="tiendas" />
+            <p>Tiendas</p>
+          </div>
+          <div class="section_middle_justify itemDepa">
+            <img src="images/colegios.svg" alt="colegios" />
+            <p>Colegios</p>
+          </div>
+          <div class="section_middle_justify itemDepa">
+            <img src="images/parques.svg" alt="parques" />
+            <p>Parques</p>
+          </div>
+          <div class="section_middle_justify itemDepa">
+            <img src="images/centros-salud.svg" alt="centros de salud" />
+            <p>Centros de salud</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="wrappContacto section_middle_center" id="contacto">
@@ -147,10 +182,14 @@
           </label>
         </form>
         <div data-aos="zoom-in-right" data-aos-delay="500" data-aos-duration="600">
-          <h2 class="tituloContacto">COMUNÍCATE CON NOSOTROS</h2>
+          <h2 class="tituloContacto marginVertical_tiny">COMUNÍCATE CON NOSOTROS</h2>
           <a href="mailto:informes@nmespacios.com.pe" class="correo">informes@nmespacios.com.pe</a>
+          <p>913 050 274</p>
           <p>(01) 711 9250</p>
+          <h2 class="tituloContacto marginVertical_tiny marginTop_big">VISITA LA SALA DE VENTAS</h2>
+          <p class="marginBottom_gigant">Rodolfo Rutte 650 Magdalena</p>
         </div>
+        <img src="images/logo.svg" alt="Logo" class="logoFRM">
       </div>
     </div>
     <div class="section_middle_center" id="proyectos">
@@ -161,8 +200,9 @@
         <div class="itemProyect" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="900"> <img src="images/proyectos/proyectos4.jpg" class="w_100" alt="proyecto 4"> </div>
         <div class="itemProyect" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000"> <img src="images/proyectos/proyectos5.jpg" class="w_100" alt="proyecto 5"> </div>
         <div class="itemProyect section_bottom_right">
-          <h2 class="w_100 w_85_desktop">PROYECTOS ASOCIADOS</h2>
-          <p class="w_100 w_85_desktop">Parte de nuestra esxperiencia se basa en la construcción de centros empresariales ubicados en zonas estratégicas de Lima, como Miraflores y San Isidro.</p>
+          <div class="spaceInTop_big leyenda">1. Centro Empresarial Miraflores II 2. CEM IV 3. CEM I 4. NM LIMA HOTEL 5. CEM IIII</div>
+          <h2 class="w_100 w_95_desktop">PROYECTOS<br>DESTACADOS</h2>
+          <p class="w_100 w_95_desktop">Nuestra experiencia de más de 14 años en la construcción, gerencia de proyectos y administración de centros empresariales y hoteles, nos permite ofrecer hoy departamentos con espacios que cubran las expectativas y exigencias del mercado.</p>
         </div>
       </div>
     </div>
@@ -173,5 +213,13 @@
       <p>Diseño web por Grupo Tendenze Comunicaciones</p>
     </section>
   </footer>
+  <div class="overflow" onclick="closeModal(this)"></div>
+  <div class="wrappModal section_middle_center">
+    <div class="section_middle_right w_80 w_50_desktop">
+      <a onclick="closeModal(this)" class="closeModal"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg></a>
+      <div id="imageModal" class="section_middle_center w_100"></div>
+      <div id="captionModal" class="w_100"></div>
+    </div>
+  </div>
 </body> 
 </html>

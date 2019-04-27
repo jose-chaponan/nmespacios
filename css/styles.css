@@ -6,6 +6,7 @@ body {
 @media all and (min-width: 1px) {
   .logo {
     min-width: 120px;
+    width: 19%;
   }
   nav {
     width: 50%;
@@ -28,6 +29,9 @@ body {
   header {
     position: relative;
     z-index: 2;
+  }
+  section {
+    overflow-x: hidden;
   }
   .encabezado {
     padding: 25px 0;
@@ -56,8 +60,12 @@ body {
     margin: 5px 0;
     width: 100%;
   }
+  .caracteristicas li img {
+    width: 20%;
+    margin: 0;
+  }
   .caracteristicas li span {
-    width: 85%;
+    width: 75%;
   }
   .linkFilter {
     border: 2px solid #00AACC;
@@ -87,7 +95,7 @@ body {
     font-size: 1.9rem;
   }
   .espacios img {
-    width: 40%;
+    width: 100%;
     margin: 10px 0;
   }
   .titlePlano {
@@ -119,6 +127,7 @@ body {
     padding: 25px 0;
     width: 100%;
     margin: 15px 0;
+    overflow: hidden;
   }
   .contacto {
     position: relative;
@@ -157,7 +166,6 @@ body {
     height: 4px;
   }
   .tituloContacto {
-    margin: 0;
     font-family: "Akrobat-ExtraBold";
     font-weight: 100;
     font-size: 2.8rem;
@@ -168,6 +176,7 @@ body {
   }
   .proyectos {
     margin: 20px 0;
+    position: relative;
   }
   .proyectos .itemProyect {
     width: 49%;
@@ -190,6 +199,153 @@ body {
     width: 100%;
     margin: 10px 0;
   }
+  .lista {
+    width: 100%;
+    margin: 1vw 0 0;
+  }
+  .lista li {
+    position: relative;
+    padding-left: 15px;
+    margin: 10px 0;
+    font-weight: 700;
+  }
+  .lista li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #00AACC;
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+  }
+  .slick-slide {
+    cursor: pointer;
+    height: 28vh;
+    overflow: hidden;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .slick-slide img {
+    margin: auto;
+  }
+  .itemDepa {
+    width: 50%;
+    margin: 1vw 0;
+  }
+  .itemDepa img {
+    width: 20%;
+    display: block;
+    margin: 0;
+  }
+  .itemDepa p {
+    display: block;
+    width: 75%;
+    font-family: "Akrobat-ExtraBold";
+  }
+  .overflow {
+    background-color: rgba(28, 43, 57, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+  }
+  .wrappModal {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+  }
+  .wrappModal img {
+    width: 100%;
+  }
+  .wrappModal p {
+    width: 100%;
+    font-family: "Akrobat-ExtraBold";
+    padding: 10px 0;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 1.8rem;
+  }
+  .closeModal svg {
+    width: 1.5vw;
+    min-width: 15px;
+  }
+  .closeModal svg path {
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    color: #FFFFFF;
+  }
+  .closeModal:hover svg path {
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    color: #00AACC;
+  }
+  .showModalWrapp {
+    opacity: 1;
+    z-index: 999;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+  }
+  .showModal {
+    opacity: 1;
+    z-index: 1000;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+  }
+  .slick-next,
+  .slick-prev {
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    opacity: 1;
+  }
+  .slick-next:hover,
+  .slick-prev:hover {
+    opacity: .5;
+  }
+  .slick-next::before,
+  .slick-prev::before {
+    content: '';
+    background-size: 100%;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    background-repeat: no-repeat;
+    background-image: url("../images/arrow-next.svg");
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+  .slick-prev::before {
+    background-image: url("../images/arrow-prev.svg");
+  }
+  .slick-prev.slick-disabled,
+  .slick-next.slick-disabled {
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    opacity: 0;
+    display: none;
+  }
+  .leyenda {
+    font-family: "Akrobat-ExtraBold";
+  }
 }
 
 @media all and (min-width: 376px) {
@@ -208,7 +364,7 @@ body {
     border-bottom: 30px solid #FFFFFF;
   }
   .espacios img {
-    width: 25%;
+    width: 100%;
   }
   .linkFilter {
     width: 21%;
@@ -229,6 +385,9 @@ body {
   }
   .dormitorios > div {
     width: 50%;
+  }
+  .itemDepa {
+    width: 30%;
   }
 }
 
@@ -261,10 +420,10 @@ body {
     font-size: 3.2rem;
   }
   .caracteristicas li {
-    width: 50%;
+    width: 48%;
   }
   .caracteristicas li span {
-    width: 80%;
+    width: 75%;
   }
   .linkFilter {
     margin: 20px 15px;
@@ -277,7 +436,7 @@ body {
     font-size: 2.8rem;
   }
   .proyectos {
-    margin: 20px 0;
+    margin: 20px 0 5vw;
   }
   .proyectos .itemProyect {
     width: 33%;
@@ -286,10 +445,11 @@ body {
     width: 33%;
   }
   .proyectos h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
+    margin: 0 0 10px;
   }
   .proyectos p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .manPhone {
     height: 95vh;
@@ -297,13 +457,78 @@ body {
   .dormitorios > div {
     width: 33%;
   }
-  footer p {
-    width: 50%;
-  }
   footer p:first-child {
+    width: 40%;
     text-align: left;
   }
   footer p:last-child {
+    width: 60%;
     text-align: right;
+  }
+  .slider {
+    margin: 2vw 0;
+  }
+  .slick-slide {
+    height: 10vw;
+  }
+  .itemDepa {
+    width: auto;
+  }
+  .itemDepa img {
+    width: 3vw;
+  }
+  .itemDepa p {
+    width: auto;
+    margin-left: 5px;
+  }
+  .logoFRM {
+    position: absolute;
+    width: 8vw;
+    bottom: 0;
+    right: 18vw;
+  }
+  .leyenda {
+    position: absolute;
+    left: 0;
+    bottom: -3vw;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  footer {
+    position: relative;
+    z-index: 100;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    background-color: #24303B;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  nav ul li {
+    width: 33.3%;
+  }
+  nav ul li a {
+    width: 90%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  html {
+    font-size: 80%;
   }
 }
