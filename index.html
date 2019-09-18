@@ -79,11 +79,15 @@
       </div>
     </div>
     <div class="w_85 w_60_desktop section_middle_center">
-      <a href="" class="w_100 align_center w_20_desktop linkFilter" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="1000">Galerías fotos</a>
-      <a href="" class="w_100 align_center w_20_desktop linkFilter" data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="1000">Departamentos</a>
-      <a href="" class="w_100 align_center w_20_desktop linkFilter" data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="1000">Ubicación</a>
+      <a href="#galeria-fotos" class="w_100 align_center w_20_desktop linkFilter scrollLink" data-aos="zoom-in-up"
+        data-aos-delay="500" data-aos-duration="1000">Galerías fotos</a>
+      <a href="#departamentos" class="w_100 align_center w_20_desktop linkFilter scrollLink" data-aos="zoom-in-up"
+        data-aos-delay="600" data-aos-duration="1000">Departamentos</a>
+      <a href="#ubicacion" class="w_100 align_center w_20_desktop linkFilter scrollLink" data-aos="zoom-in-up"
+        data-aos-delay="700" data-aos-duration="1000">Ubicación</a>
     </div>
-    <div class="w_85 w_60_desktop section_middle_center" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+    <div id="galeria-fotos" class="w_85 w_60_desktop section_middle_center" data-aos="fade-up" data-aos-delay="800"
+      data-aos-duration="1000">
       <div class="slider w_100">
         <div class="w_100 w_33_desktop spaceInAll_tiny section_middle_center" onclick="showModal(this)">
           <img src="images/gallery/loby.jpg" alt="loby" class="w_100" data-caption="Loby" />
@@ -118,7 +122,7 @@
         </div>
       </div>
     </div>
-    <div class="section_middle_center w_100">
+    <div id="departamentos" class="section_middle_center w_100">
       <div class="w_85 w_60_desktop section_top_justify dormitorios">
         <div class="w_100 w_31_desktop" class="espaciosItem" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
           <div class="titlePlano">1 DORM</div>
@@ -136,7 +140,7 @@
           Las imágenes, planos y características mostradas en este catálogo son referenciales y podrían mostrar modificaciones en el transcurso del proyecto sin previo aviso, por razones municipales, técnicas o por falta de disponibilidad de materiales en el mercado.
         </p>
       </div>
-      <div class="w_85 w_60_desktop section_middle_justify">
+      <div id="ubicacion" class="w_85 w_60_desktop section_middle_justify">
         <div class="w_100 w_37_desktop ubicacion" data-aos="zoom-in-up" data-aos-delay="500" data-aos-duration="600">
           <h2 class="titleUbicacion w_20_desktop">UBICACIÓN INMEJORABLE</h2>
           <p>
@@ -224,7 +228,7 @@
   </footer>
   <div class="overflow" onclick="closeModal(this)"></div>
   <div class="wrappModal section_middle_center">
-    <div class="section_middle_right w_80 w_50_desktop">
+    <div class="section_middle_right w_80 w_40_desktop">
       <a onclick="closeModal(this)" class="closeModal"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg></a>
       <div id="imageModal" class="section_middle_center w_100"></div>
       <div id="captionModal" class="w_100"></div>
